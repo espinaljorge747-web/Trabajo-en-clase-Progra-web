@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comidas de mi tierra</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="logo" width="220" height="200">
+            <div>
+                <h1>Comidas de mi Tierra</h1>
+                <p>Comidas tipicas 100% hondureñas</p>
+                <span>📞 Pedidos: +504 9999-9999 | 2222-2222</span> | 
+                <span>📍 Tegucigalpa, Francisco Morazán, Honduras</span> |
+                <span>📧 comidashondu@gmail.com</span>
+            </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href = "index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href = "nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href = "menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href = "reservaciones.html">Reservaciones</a>
+                    </li>
+                    <li>
+                        <a href = "contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        <main>
+            <h2>Información de la tienda</h2>
+            <p>📍Siempre en tu corazón</p>
+            <p>📞Llamenos: TGU: +504 3214-5678 | TGU: +504 9742-7832 | TGU: +504 8825-8923 | SPS: +504 8746-6785</p>
+
+            <form method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <div>
+                        <label>Asunto:</label>
+                        <select id="Asunto" name="Asunto">
+                            <option selected>Servivio al Cliente</option>
+                            <option>Webmaster</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Dirección de correo electrónico</label>
+                        <input type="email" name="correo" id="correo" required placeholder="example@gmail.com" minlength="10" maxlength="100">                        
+                    </div>
+
+                    <div>
+                        <label>Archivo adjunto</label>
+                        <button>Seleccione su Archivo</button>
+                    </div>
+
+                    <div>
+                        <label>Mensaje</label>
+                        <input type="text" name="mensaje" id="mensajer" equired placeholder="¿Comó podemos ayudarle?" minlength="10" maxlength="1000">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

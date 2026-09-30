@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comidas de mi tierra</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="logo" width="220" height="200">
+            <div>
+                <h1>Comidas de mi Tierra</h1>
+                <p>Comidas tipicas 100% hondureñas</p>
+                <span>📞 Pedidos: +504 9999-9999 | 2222-2222</span> | 
+                <span>📍 Tegucigalpa, Francisco Morazán, Honduras</span> |
+                <span>📧 comidashondu@gmail.com</span>
+            </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href = "index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href = "nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href = "menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href = "reservaciones.html">Reservaciones</a>
+                    </li>
+                    <li>
+                        <a href = "contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+    <main>
+        <h2>Reserva tu mesa del día</h2>
+        <form action="afiliados.php", method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label>Ingrese su nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido" minlength="10" maxlength="100">
+            </div>
+            <div>
+                <label>Ingrese su numero de identidad</label>
+                <input type="text" name="dni" id="dni" required placeholder="Ingrese su nombre y apellido" minlength="13" maxlength="13" pattern="[0-9]{4}-[0-9]{4}-[0-9]{5}">
+            </div>
+            <div>
+                <label>Ingrese su telefono</label>
+                <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su numero de telefono" minlength="11" maxlength="11" >
+            </div>
+            <div>
+                <label>Cantidad de Personas</label>
+                <input type="number" name="Personas" id="Personas" required placeholder="Cantidad de Personas" minlength="1" maxlength="20" >
+            </div>
+            <div>
+                <label>Fecha de resevas</label>
+                <input type="date" name="fecha" id="fecha" required placeholder="Ingrese su día a reserva" minlength="2000-01-01" maxlength="2030-01-01" >
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sucursal</legend>
+            <div>
+                <label>Seleccione:</label>
+                <select id="Sucursal" name="Sucursal">
+                    <option selected>Blv Morazan</option>
+                    <option>City Mall</option>
+                    <option>Mall Premier</option>
+                    <option>Multiplaza</option>
+                    <option>Quinta entrada de la Kennedy</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <button>ENVIAR</button>
+        </fieldset>
+        </form>
+    </main>
+    </body>
+
+</html>
